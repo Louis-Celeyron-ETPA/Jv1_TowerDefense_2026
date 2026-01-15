@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 133504849049619912}
   - component: {fileID: 2645149194480080084}
   - component: {fileID: 5873578671285954587}
+  - component: {fileID: -3932350138593487764}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2610766772774213905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36,6 +37,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &133504849049619912
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -80,7 +82,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 1753442361, guid: ba5a3ff6f82aee249ae097d921c8c8e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -90,7 +93,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &2645149194480080084
 CircleCollider2D:
@@ -126,8 +128,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 2.32
+  m_Offset: {x: 0.5, y: 0.5}
+  m_Radius: 2.5
 --- !u!114 &5873578671285954587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +148,21 @@ MonoBehaviour:
   dammage: 2
   bulletColor: {r: 1, g: 1, b: 1, a: 1}
   bulletPrefab: {fileID: 7399463849973847338, guid: 4619f3dd645720346b7f85a12b123d80, type: 3}
+--- !u!114 &-3932350138593487764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610766772774213905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b291f75e12c8c524195c9a8a48efdc57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteAnimation
+  sprites:
+  - {fileID: 1898565190, guid: ba5a3ff6f82aee249ae097d921c8c8e7, type: 3}
+  - {fileID: 1227076118, guid: ba5a3ff6f82aee249ae097d921c8c8e7, type: 3}
+  totalAnimationTime: 1
+  spriteRenderer: {fileID: 133504849049619912}
+  playOnStart: 1

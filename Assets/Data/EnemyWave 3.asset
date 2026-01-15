@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: beb4a2a39be2a9f49b4004ea043f0915, type: 3}
-  m_Name: EnemyWave 2
+  m_Name: EnemyWave 3
   m_EditorClassIdentifier: Assembly-CSharp::EnemyWave
   enemiesInWave:
-  - {fileID: 7847340711133858524, guid: c08963e3053946e4293aa84a01cabf1a, type: 3}
-  - {fileID: 7847340711133858524, guid: c08963e3053946e4293aa84a01cabf1a, type: 3}
+  - {fileID: 5607484920716606178, guid: 7a4cbc954e572404e853014663dfba66, type: 3}
+  - {fileID: 5607484920716606178, guid: 7a4cbc954e572404e853014663dfba66, type: 3}
   - {fileID: 5607484920716606178, guid: 7a4cbc954e572404e853014663dfba66, type: 3}
   waitTime: 0

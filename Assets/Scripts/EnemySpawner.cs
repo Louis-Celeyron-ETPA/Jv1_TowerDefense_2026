@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public List<EnemyWave> wavesList;
+    public float delayBetweenWaves = 3f;
     
     void Start()
     {
@@ -13,12 +14,17 @@ public class EnemySpawner : MonoBehaviour
 
     public IEnumerator SpawnWave()
     {
-        var currentWave = wavesList[Random.Range(0, wavesList.Count)];
-        
-        foreach(GameObject enemy in currentWave.enemiesInWave)
+        while(true)
         {
-            Instantiate(enemy,transform);
-            yield return new WaitForSeconds(currentWave.waitTime);
+            var currentWave = wavesList[Random.Range(0, wavesList.Count)];
+            
+            foreach(GameObject enemy in currentWave.enemiesInWave)
+            {
+                Instantiate(enemy, transform);
+                yield return new WaitForSeconds(currentWave.waitTime);
+            }
+            
+            yield return new WaitForSeconds(delayBetweenWaves);
         }
     }
 }

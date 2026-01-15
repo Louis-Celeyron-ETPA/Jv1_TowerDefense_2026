@@ -15,5 +15,5 @@ MonoBehaviour:
   enemiesInWave:
   - {fileID: 6869954312795074333, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
   - {fileID: 6869954312795074333, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
-  - {fileID: 6869954312795074333, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
-  waitTime: 2
+  - {fileID: 4666067931170708268, guid: d70d09be3a88b54419e40fdf1efc9ab1, type: 3}
+  waitTime: 0
