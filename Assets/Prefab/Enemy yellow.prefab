@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1335091751588468223
+--- !u!1001 &2276515749425427505
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -50,19 +50,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6869954312795074333, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
       propertyPath: m_Name
-      value: Enemy Variant
+      value: Enemy Variant 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1033142324, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1099110024, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: -1987668100, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1099110024, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
     - target: {fileID: 8627490198144938418, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -330114531, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+      objectReference: {fileID: 1033142324, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
     - target: {fileID: 8979410002054373570, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
       propertyPath: HpMax
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8979410002054373570, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
       propertyPath: timeToPath
-      value: 35
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

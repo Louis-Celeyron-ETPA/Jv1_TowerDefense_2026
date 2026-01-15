@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 5904849984569411636}
   - component: {fileID: 8979410002054373570}
   - component: {fileID: -1428939132400990454}
+  - component: {fileID: 7680377196367893058}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,6 +40,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8627490198144938418
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -84,6 +86,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
+  m_MaskInteraction: 0
   m_Sprite: {fileID: -803060424, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -93,7 +96,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &2222735647213734253
 CircleCollider2D:
@@ -212,3 +214,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7680377196367893058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869954312795074333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b291f75e12c8c524195c9a8a48efdc57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteAnimation
+  sprites:
+  - {fileID: -803060424, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+  - {fileID: 1807316878, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+  - {fileID: -1429711683, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+  - {fileID: 1807316878, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+  totalAnimationTime: 1
+  spriteRenderer: {fileID: 0}
+  playOnStart: 1

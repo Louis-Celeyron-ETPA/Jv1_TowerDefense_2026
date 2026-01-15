@@ -11,9 +11,20 @@ public class BulletBehaviour : MonoBehaviour
     {
         if (targetEnemy == null)
         {
-               Destroy(gameObject);
+            Destroy(gameObject);
+            return;
         }
-        transform.position = Vector3.MoveTowards(transform.position, targetEnemy.transform.position, speed);    
+
+        Vector3 targetPosition = targetEnemy.transform.position;
+        Vector3 direction = (targetPosition - transform.position).normalized;
+
+        // Oriente la balle vers la cible
+        if (direction.sqrMagnitude > 0.0001f)
+        {
+            transform.up = direction;
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +33,6 @@ public class BulletBehaviour : MonoBehaviour
 
         if (collisionEnemyComponent != null)
         {
-
             collisionEnemyComponent.myHpManager.RemoveHp(dammage);
             Destroy(gameObject);
         }

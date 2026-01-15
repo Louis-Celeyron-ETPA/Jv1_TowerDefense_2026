@@ -52,6 +52,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -48632023, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 69894713, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1050546976, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
+    - target: {fileID: 7680377196367893058, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
+      propertyPath: 'sprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 69894713, guid: ecf4c7f75e412da4ca589c406d3ca8c7, type: 3}
     - target: {fileID: 8627490198144938418, guid: 8177b6a7613d5274ca60a9452ed12234, type: 3}
       propertyPath: m_Sprite
       value: 

@@ -6,7 +6,7 @@ public class TowerSpawn : MonoBehaviour
     private void OnMouseDown()
     {
         var tower = Instantiate(towerPrefab);
-        tower.transform.position = transform.position;
+        tower.transform.position = transform.position + new Vector3(0.5f, 0.5f, 0f);
         Destroy(gameObject);
     }
 }
