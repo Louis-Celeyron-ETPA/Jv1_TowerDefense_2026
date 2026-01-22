@@ -3,17 +3,19 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     public EnemyContainer targetEnemy;
-    public float speed = 0.2f;
     public int dammage;
     public SpriteRenderer spriteRenderer;
+    public float speed = 0.2f;
 
     void Update()
     {
+     
+
+        // A la fin pour ne pas essayer d'utiliser un objt detruit
         if (targetEnemy == null)
         {
                Destroy(gameObject);
         }
-        transform.position = Vector3.MoveTowards(transform.position, targetEnemy.transform.position, speed);    
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

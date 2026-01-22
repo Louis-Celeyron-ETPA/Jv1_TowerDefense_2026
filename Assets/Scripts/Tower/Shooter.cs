@@ -10,7 +10,8 @@ public class Shooter : MonoBehaviour
     public int dammage;
     public Color bulletColor;
     public BulletBehaviour bulletPrefab;
-    
+    public int bulletAmount=1;
+    public float waitTimeInOneShoot = 0.08f;
     void Start()
     {
         StartCoroutine(Shoot());
@@ -29,7 +30,14 @@ public class Shooter : MonoBehaviour
             {
                 yield return new WaitForEndOfFrame();
             }
-            ShootAction();
+
+            for (int i = 0; i < bulletAmount; i++)
+            {
+                ShootAction();
+                yield return new WaitForSeconds(waitTimeInOneShoot);
+                
+            }
+
             yield return new WaitForSeconds(shootTime);
         }
     }

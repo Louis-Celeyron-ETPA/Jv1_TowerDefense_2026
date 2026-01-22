@@ -11,7 +11,8 @@ public class GoldManager : MonoBehaviour
         currentGold += gold;
     }
 
-    // Update is called once per frame
+
+
     void Update()
     {
         goldText.text = currentGold.ToString("00");

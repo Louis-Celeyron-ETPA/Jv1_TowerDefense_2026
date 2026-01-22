@@ -7,7 +7,8 @@ public class HpManager : MonoBehaviour
 
     public int currentHP;
     public int maxHP;
-
+    public int goldToWin;
+    public GoldManager goldManager;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class HpManager : MonoBehaviour
 
     public void Die()
     {
+        goldManager.AddGold(goldToWin);
         Destroy(gameObject);
     }
 }
